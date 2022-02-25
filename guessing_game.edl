@@ -1,0 +1,13 @@
+enclave {
+    from "openenclave/edl/syscall.edl" import *;
+    from "platform.edl" import *;
+
+    trusted {
+	public void enc_compare(int a, int* res);
+	public void enc_get_maxnum(int a); 
+    };
+
+    untrusted {
+    };
+};
+
